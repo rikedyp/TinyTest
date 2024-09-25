@@ -1,0 +1,5 @@
+ Test_Report_04←{
+⍝ Test report with errors and failures
+     r←##.##.API.Report(1 'pass')(0 'fail')(¯1 'error')
+     r≡↑' Results of 3 test functions. ' '  Failures:' '   fail' '   *error' ' 1 tests passed' ' 1 tests failed' ' 1 tests errored (indicated with asterisks * above) '
+ }

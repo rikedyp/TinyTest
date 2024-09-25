@@ -1,0 +1,12 @@
+ Test←{
+⍝ ⍵: test to run
+⍝ ⍺: debug mode
+⍝ ←: test result
+⍝    1: success
+⍝    0: failure (2nd element is test name)
+⍝    ¯1: error (2nd element is test name) (3rd element is error info)
+     ~0=⍺::(¯1)(⍵)(⎕DMX.DM)
+     F←⍎⍵          ⍝ test function
+     ~F ⍺:(0)(⍵)   ⍝ Trace into test function from this point
+     (1)(⍵)
+ }

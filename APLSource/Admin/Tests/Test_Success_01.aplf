@@ -1,0 +1,4 @@
+ Test_Success_01←{
+     r←Run Success
+     r≡,⊂1 '#.TinyTest.Admin.Tests.Success.Test_Success_01'
+ }

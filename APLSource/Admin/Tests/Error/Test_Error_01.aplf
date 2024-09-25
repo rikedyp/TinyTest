@@ -1,0 +1,4 @@
+ Test_Error_01←{
+⍝ Test SYNTAX error
+     ∘∘∘
+ }

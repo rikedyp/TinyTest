@@ -1,0 +1,4 @@
+ Test_Failure_01←{
+     r←Run Fail
+     r≡,⊂0 '#.TinyTest.Admin.Tests.Fail.Test_Fail_01'
+ }

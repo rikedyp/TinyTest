@@ -1,0 +1,5 @@
+ Test_Error_01←{
+     r←Run Error
+     ∨/¯1≠⊃¨r:0
+     'SYNTAX ERROR' 'DOMAIN ERROR'≡(⊃3∘⊃)¨r
+ }

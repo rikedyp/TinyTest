@@ -1,0 +1,9 @@
+ Run←{
+⍝ This Run function is used to test TinyTest
+     fns←⍵.⎕NL ¯3
+     path←(⍕⍵),'.'
+     tests←path∘,¨fns/⍨'Test_'∘(⊃⍷)¨fns
+     ⍺←0
+     r←⍺∘##.##.API.Test¨tests
+     r
+ }

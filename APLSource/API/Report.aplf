@@ -1,0 +1,18 @@
+ Report←{
+⍝ ⍵: test results
+     0∊⍴⍵:''
+     r←⍪⊂'Results of ',(⍕≢⍵),' test functions.'
+     code←⊃¨⍵
+     passed←+/1=code
+     failed←+/0=code
+     error←+/¯1=code
+     bad←0≥code
+     r⍪←⍪(∨/bad)/⊂' Failures: '
+     bad_fns←bad/2⊃¨⍵
+     err←⍸bad/¯1=code
+     r⍪←⍪'  '∘,¨'*'∘,¨@err⊢bad_fns
+     r⍪←⍪(0<passed)/⊂(⍕passed),' tests passed'
+     r⍪←⍪(0<failed)/⊂(⍕failed),' tests failed'
+     r⍪←⍪(0<error)/⊂(⍕error),' tests errored (indicated with asterisks * above)'
+     ⍕r
+ }

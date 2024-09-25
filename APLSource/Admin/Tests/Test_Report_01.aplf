@@ -1,0 +1,5 @@
+ Test_Report_01←{
+⍝ Test report with no tests
+     r←''##.##.API.Report''
+     r≡''
+ }

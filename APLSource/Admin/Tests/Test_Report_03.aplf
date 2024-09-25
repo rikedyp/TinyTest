@@ -1,0 +1,5 @@
+ Test_Report_03←{
+⍝ Test report with no errors
+     r←##.##.API.Report(1 'pass')(0 'fail')
+     r≡↑' Results of 2 test functions. ' '  Failures:' '   fail' ' 1 tests passed' ' 1 tests failed'
+ }

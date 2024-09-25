@@ -1,0 +1,4 @@
+ Test_Error_02←{
+⍝ Test DOMAIN error
+     ÷0
+ }

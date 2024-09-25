@@ -1,0 +1,15 @@
+ Run←{
+⍝ ⍵: reference to namespace of test functions
+⍝ ⍺: debug
+⍝    0: only report results
+     ⍺←0 ⍝ default
+⍝    1: stop on error or failure
+⍝    2: stop before running each test
+     dbg←(2=⍺)/9 ⋄ _←dbg ⎕STOP'Test'
+     fns←⍵.⎕NL ¯3
+     path←(⍕⍵),'.'
+     tests←path∘,¨fns/⍨'Test_'∘(⊃⍷)¨fns
+     0∊⍴tests:'No tests found in ',⍕⍵
+     r←⍺∘Test¨tests
+     ⎕←tests Report r
+     shy←r}
