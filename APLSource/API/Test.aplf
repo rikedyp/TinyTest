@@ -6,7 +6,9 @@
 ⍝    0: failure (2nd element is test name)
 ⍝    ¯1: error (2nd element is test name) (3rd element is error info)
      ~0=⍺::(¯1)(⍵)(⎕DMX.DM)
-     F←⍎⍵          ⍝ test function
-     ~F ⍺:(0)(⍵)   ⍝ Trace into test function from this point
-     (1)(⍵)
+     F←⍎⍵           ⍝ Test function
+     r←F ⍺          ⍝ Test result
+     (1=⍺)∧~r:∘∘∘   ⍝ In debug mode: stop on fail
+     ~F ⍺:(0)(⍵)    ⍝ Trace into test function from this point
+     (1)(⍵)         ⍝ Success
  }

@@ -1,0 +1,6 @@
+ Test_StopOnFail←{
+⍝ Failed test should throw SYNTAX ERROR
+     2::1
+     r←1 ##.##.API.Run Fail
+     0
+ }
