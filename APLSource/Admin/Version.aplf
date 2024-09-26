@@ -1,5 +1,0 @@
- r←Version;cfg
-⍝ In development, read version number from apl-package.json
-⍝ The MakeRelease function fixes the version number here
- cfg←⎕SE.Tatin.ReadPackageConfigFile ##.CiderConfig.HOME
- r←cfg.version
