@@ -13,7 +13,7 @@ Create a namespace of functions, whose names begin `Test_`, that return `1` if t
 Call the Run function with a right argument reference to that namespace containing your test functions.
 
 ```
-Run #.tests
+TinyTest.Run #.tests
 ```
 
 The optional left argument controls debug behaviour:
@@ -24,7 +24,16 @@ The optional left argument controls debug behaviour:
 ## Installation
 
 ### Tatin
-TinyTest is provided as a Tatin package (not yet).
+TinyTest is provided as a Tatin package.
+
+```
+      ]TATIN.LoadPackages RikedyP-TinyTest
+1 package loaded into #
+```
 
 ### Get
-You can also bring TinyTest into your active workspace with the `]Get` user command (also not tested).
+You can bring TinyTest into your active workspace with the `]Get` user command.
+
+```
+]Get https://github.com/rikedyp/TinyTest/releases/download/v1.0.0/TinyTest.zip
+```
