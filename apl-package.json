@@ -4,7 +4,7 @@
   description: "A small unit testing framework for Dyalog APL ",
   documentation: "",
   files: "",
-  group: "RikedyP",
+  group: "rikedyp",
   io: 1,
   license: "MIT",
   lx: "",
